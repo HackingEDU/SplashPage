@@ -1,0 +1,91 @@
+
+
+/* =========================================================================
+                           CSS Framework Helpers
+   =======================================================================*/
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+.mg-top-none {
+    margin-top: 0;
+}
+.mg-bottom-none {
+    margin-bottom: 0;
+}
+.mg-bottom-7em {
+    margin-bottom: 7em;
+}
+.marg-btm-9em {
+	margin-bottom: 9em;
+}
+.marg-left-6 {
+	margin-left: 6.3em;
+}
+
+.vertically-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+/* =========================================================================
+                           Main Page Signup Buttons
+   =======================================================================*/
+.volunteer-btn {
+    padding: 15px 51px;
+}
+
+.sponsor-btn-pad {
+    padding: 15px 59px;
+}
+
+.main-btn {
+    margin-top: 1em;
+    margin-right: .5em;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: clear;
+    color: #fff;
+    border-radius: 10px;
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /* border: none; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* text-decoration: none; */
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    /* max-width: 236px; */
+    /* cursor: pointer; */
+    transition-duration: .4s;
+}
+.apply-btn {
+    padding: 15px;
+}
+.main-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    border: 2px solid #fff;
+}
+
+/* =========================================================================
+                                Logo
+   =======================================================================*/
+
+.logo-container {
+	text-align: center;
+}
+
+
+/* =========================================================================
+                            Social Links
+   =======================================================================*/
+
+
