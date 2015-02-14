@@ -1,16 +1,32 @@
 body {
-  font-family: "Raleway";
-  background-image: url('assets/img/prism.jpg');
+    background-color: #f2f2f2;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    background-image: url('assets/img/prism.jpg');
 }
 .contents {
-  margin: 60px 10% 0px;
+  margin: 210px 10% 0px;
   color: #fff
 }
 h1 {
   font-size: 60px;
-  margin: 210px 0px 60px;
+  margin: 0px;
   text-align: center;
 }
+h1.subtitle {
+  font-size: 36px;
+}
+h1.ugly-line {
+  font-size: 18px;
+}
 p {
+  font-size: 18px;
+}
+li {
   font-size: 18px;
 }
