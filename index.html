@@ -32,7 +32,7 @@
     <!-- TODO!!! -->
 
     <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="myCarousel" data-ride="carousel" data-interval="6000" class="carousel fade-carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -40,31 +40,41 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for Slides -->
+        <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('assets/img/prism.jpg');"></div>
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                    <img class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 mg-r-2em mg-t-3em" alt="HackingEDU hackathon" src="./assets/img/hacklogo-white-no-border.png" alt="">
+                    <!-- <h3 class="float-left display-block">Get start your next awesome project</h3> -->
+                    </hgroup>
+                    <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
+                    <p class="lead"><a class="typeform-share btn btn-lg main-btn volunteer-btn"href="https://jackiezhang.typeform.com/to/IqBqso" data-mode="2" target="_blank">Join The Team</a></p>
+                </div>
+                <!-- TEAM APPLICATION -->
                 <div class="carousel-caption">
-                    <img class="vertically-center col-xs-12 col-sm-10 col-lg-8 col-lg-offset-2" alt="HackingEDU hackathon" src="./assets/img/hacklogo-white-no-border.png" alt=""><!-- marg-btm-9em -->
-                    <!-- TEAM APPLICATION -->
-                    <p class="lead"><a class="btn btn-lg main-btn volunteer-btn" href="#apply">Join The Team</a></p>
+                    <!-- if you want the button to be closer to the 3 dots -->
                 </div>
             </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('assets/img/Paypal%20Hq.jpg');"></div>
-                <div class="carousel-caption">
-                    <!-- HACKER APPLICATION -->
-                    <p class="lead"><a class="btn btn-lg main-btn apply-btn" href="#apply">Main Application</a></p>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>HackingEDU Training Day</h1>
+                        <h3>Learn the tools to build your next project</h3>
+                    </hgroup>
+                    <p class="lead"><a class="typeform-share btn btn-lg main-btn apply-btn" href="https://jackiezhang.typeform.com/to/w6qOJT" data-mode="2" target="_blank">Training Day Application</a></p>
                 </div>
             </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('assets/img/Education%20Wall%20paper.jpg');"></div>
-                <div class="carousel-caption">
-                    <!-- SPONSOR APPLICATION -->
-                    <p class="lead"><a class="btn btn-lg main-btn sponsor-btn sponsor-btn-pad" href="#apply">Sponsor</a></p>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>We are amazing</h1>
+                        <h3>Get start your next awesome project</h3>
+                    </hgroup>
+                    <p class="lead"><a class="typeform-share btn btn-lg main-btn sponsor-btn sponsor-btn-pad"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor</a></p>
                 </div>
             </div>
         </div>
@@ -85,6 +95,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Typeform -->
+    <script>
+        // Join The Team
+        (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        // Training Day
+        (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        // Sponsors
+        (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+    </script>
 
     <!-- Script to Activate the Carousel -->
     <script>
