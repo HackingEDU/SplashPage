@@ -14,6 +14,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Fonts -->
+    <link href="assets/fonts/GeosansLight.ttf" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="assets/css/full-slider.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
@@ -28,8 +32,13 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <!-- TODO!!! -->
+    <!-- Social Media Icons -->
+    <div class="social-block">
+        <a href="https://www.facebook.com/hackingedusf" style="display: block;"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+        <a href="https://twitter.com/hackingedusf" style="display: block;"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+        <a href="https://instagram.com/hackingedusf" style="display: block;"><i id="social" class="fa fa-instagram fa-3x social-ig"></i></a>
+        <a href="mailto:team@hackingedu.co" style="display: block;"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+    </div>
 
     <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" data-ride="carousel" data-interval="6000" class="carousel fade-carousel slide">
@@ -42,11 +51,14 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+            <!-- HackingEDU Main Page -->
             <div class="item slides active">
                 <div class="slide-1"></div>
                 <div class="hero">
                     <hgroup>
+                        <!-- HackingEDU Cover Image -->
                         <img class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 mg-r-2em mg-t-3em" alt="HackingEDU hackathon" src="./assets/img/hacklogo-white-no-border.png" alt="">
+                        <h4 class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">Bay Area's Largest Education Hackathon</h4>
                     </hgroup>
                 </div>
                 <div class="carousel-caption">
@@ -54,6 +66,7 @@
                     <p class="lead"><a class="typeform-share btn btn-lg main-btn volunteer-btn"href="https://jackiezhang.typeform.com/to/IqBqso" data-mode="2" target="_blank">Join The Team</a></p>
                 </div>
             </div>
+            <!-- Training Day -->
             <div class="item slides">
                 <div class="slide-2"></div>
                 <div class="hero">
@@ -62,21 +75,23 @@
                     </hgroup>
                 </div>
                 <div class="carousel-caption">
-                    <!-- Training Day Application -->
                     <p class="lead"><a class="typeform-share btn btn-lg main-btn apply-btn" href="https://jackiezhang.typeform.com/to/w6qOJT" data-mode="2" target="_blank">Training Day Application</a></p>
                 </div>
             </div>
+            <!-- Sponsorships -->
             <div class="item slides">
                 <div class="slide-3"></div>
                 <div class="hero">
                     <hgroup>
                         <h1>Sponsorships</h1>
-                        <!-- <h3>Join the Revolution</h3> -->
                     </hgroup>
                 </div>
                 <div class="carousel-caption">
                     <!-- Sponsorship Application -->
-                    <p class="lead"><a class="typeform-share btn btn-lg main-btn sponsor-btn sponsor-btn-pad"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor</a></p>
+                    <p class="lead">
+                        <a class="typeform-share btn btn-lg main-btn sponsor-btn sponsor-btn-pad"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor Us</a>
+                        <a href="#" class="btn btn-lg main-btn sponsor-btn sponsor-btn-pad" id="trigger">The Packages</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -92,20 +107,23 @@
     </header>
 
 
-    <!-- jQuery -->
+    <!--   -->
     <script src="assets/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Typeform -->
     <script>
+    // TypeForm
         // Join The Team
         (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
         // Training Day
         (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
         // Sponsors
         (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+
+    // Sponsorship PDF Modal
+
     </script>
 
     <!-- Script to Activate the Carousel -->
