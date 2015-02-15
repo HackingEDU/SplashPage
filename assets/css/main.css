@@ -46,26 +46,90 @@
 }
 */
 
-/* Centering Image */
-/*.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+
+
+
+/* =========================================================================
+                           		  Random
+   =======================================================================*/
+
+body {
+	background-color: #f2f2f2;
+	font-family: Fallback, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	/*background-image: url('assets/img/prism.jpg');*/
 }
 
-.middle {
-    display: table-cell;
-    vertical-align: middle;
+.contents {
+	margin: 210px 10% 0px;
+	color: #fff
 }
 
-.inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: /*whatever width you want/;
+h1 {
+	font-size: 60px;
+	margin: 0px;
+	text-align: center;
 }
-*/
 
+h1.subtitle {
+	font-size: 36px;
+}
+
+h1.ugly-line {
+	font-size: 18px;
+}
+
+p {
+	font-size: 18px;
+}
+
+li {
+	font-size: 18px;
+}
+
+/* =========================================================================
+                           	Imported Fonts
+   =======================================================================*/
+
+/*@font-face {
+	font-family: 'GeosansLight';
+	src: url('/assets/fonts/GeosansLight.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/fonts/GeosansLight.woff') format('woff'),
+		 url('/assets/fonts/GeosansLight.ttf') format('truetype'),
+		 url('/assets/fonts/GeosansLight.svg#GeosansLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*//*@font-face {
+	font-family: 'geosanslightregular';
+	src: url('/assets/fonts/19521.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+/* =========================================================================
+                           PDF Modal
+   =======================================================================*/
+
+.iframe-container {
+	padding-bottom: 60%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 /* =========================================================================
                            Main Page Signup Buttons
@@ -121,41 +185,44 @@
                             Social Links
    =======================================================================*/
 
-
-
-body {
-    background-color: #f2f2f2;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    background-image: url('assets/img/prism.jpg');
+#social:hover {
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
 }
-.contents {
-  margin: 210px 10% 0px;
-  color: #fff
+#social {
+	-webkit-transform:scale(0.8);
+	/* Browser Variations: */
+	-moz-transform:scale(0.8);
+	-o-transform:scale(0.8);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
 }
-h1 {
-  font-size: 60px;
-  margin: 0px;
-  text-align: center;
+.social-fb:hover {
+	color: #3B5998;
 }
-h1.subtitle {
-  font-size: 36px;
+.social-tw:hover {
+	color: #4099FF;
 }
-h1.ugly-line {
-  font-size: 18px;
+.social-ig:hover {
+	color: #3C4F56;
 }
-p {
-  font-size: 18px;
-}
-li {
-  font-size: 18px;
+.social-em:hover {
+	color: #f39c12;
 }
 
+.social-block {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	z-index: 1;
+}
+
+a { /* BOOTSTRAP OVERWRITE */
+	color: white;
+	text-decoration: none;
+}
 /* =========================================================================
                             Fade Carousel
    =======================================================================*/
@@ -199,7 +266,7 @@ Image credits: unsplash.com
    color: #fff;
    text-align: center;
    text-transform: uppercase;
-   text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+   /*text-shadow: 1px 1px 0 rgba(0,0,0,.75);*/
      -webkit-transform: translate3d(-50%,-50%,0);
         -moz-transform: translate3d(-50%,-50%,0);
          -ms-transform: translate3d(-50%,-50%,0);
@@ -208,7 +275,7 @@ Image credits: unsplash.com
 }
 .hero h1 {
    font-size: 6em;
-   font-weight: bold;
+   /*font-weight: bold;*/
    /*margin: 0;*/
    padding: 0;
 }
