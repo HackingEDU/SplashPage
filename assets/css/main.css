@@ -18,8 +18,8 @@
 .mg-bottom-7em {
     margin-bottom: 7em;
 }
-.marg-t-3em {
-	margin-top: 3.5em;
+.marg-t-4em {
+	margin-top: 4em;
 }
 .mg-r-2em {
 	margin-right: 2em;
@@ -148,7 +148,7 @@ li {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    background: clear;
+    background: rgba(0, 0, 0, 0.247059);
     color: #fff;
     border-radius: 10px;
     /*-moz-border-radius: 10px;*/
@@ -172,14 +172,46 @@ li {
     border: 2px solid #fff;
 }
 
+/*
+	- add LinkedIn + Instagram to Team Signup Form & Training Day Signup Form
+	- Sponsorship Form:
+		- which sponsorship "package" are you interested in
+	- Training Day Form:
+		- gender (choose only 1)
+		- are you interested in a job in edTech?
+		- like/follow: add LinkedIn + Instagram
+		- any dietary restrictions
+		- will you need transportation to PayPal?
+	- Join The Team:
+		- What is your github (N/A if none)
+		- LinkedIn URL (N/A if none)
+		- school = remove picture
+		- Shirt Size
+		- position apply for
+			- remove technical coordinator
+			- maybe just put teams here
+		- remove would you consider a job in edtech
+	- maybe add roles we're looking for button to the right of join the team
+*/
+
 /* =========================================================================
-                                Logo
+                                Logo + Main Titles
    =======================================================================*/
 
 .logo-container {
 	text-align: center;
 }
 
+h1.training-day.marg-t-4em {
+	font-size: 61pt;
+}
+
+.pp-l {
+	color: #253B80;
+}
+.pp-r {
+	color: #179BD7;
+}
 
 /* =========================================================================
                             Social Links
@@ -351,5 +383,5 @@ Image credits: unsplash.com
    .hero { width: 980px; }
 }
 @media screen and (max-width: 640px){
-   .hero h1 { font-size: 4em; }
+   .hero h1 { font-size: 3em; }
 }
