@@ -133,6 +133,7 @@ a.pure-button-primary {
 
 .splash-container {
     background: #1f8dd6;
+    background-image: url("assets/img/prism.jpg");
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -145,6 +146,7 @@ a.pure-button-primary {
 
 .splash {
     /* absolute center .splash within .splash-container */
+    background-image: url("assets/img/prism.jpg");
     width: 80%;
     height: 50%;
     margin: auto;
