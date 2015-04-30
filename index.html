@@ -20,7 +20,9 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/full-slider.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/normalize.css?v=1" rel="stylesheet">
+    <link href="assets/css/main.css?v=1" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +48,6 @@
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -54,33 +55,21 @@
             <!-- HackingEDU Main Page -->
             <div class="item slides active">
                 <div class="slide-1"></div>
-                <div class="hero">
-                    <hgroup>
-                        <!-- HackingEDU Cover Image -->
-                        <img class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 mg-r-2em mg-t-3em" alt="HackingEDU hackathon" src="./assets/img/hacklogo-white-no-border.png" alt="">
-                        <h4 class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">Bay Area's Largest Education Hackathon</h4>
-                    </hgroup>
+                <div class="hero demo-3a">
+                    <div class="main-title">
+                        <img src="assets/img/hacklogo.png" style = "margin-bottom: 25px;"border="0" alt="Null">
+                        <p style='width: 80%; float: center; margin: 0 auto; padding: 20px 0px 10px'>Thanks for coming to Training Day!</p>
+                        <p style='width: 80%; float: center; margin: 0 auto; padding: 10px 0px'>Stay tuned for photos and videos!</p>
+                        <p style='width: 100%; float: center; margin: 0 auto; padding: 10px 0px'>Something we could have done better? Tell us <a href = "https://docs.google.com/forms/d/1Wib-SL_am-dQ8xe4V0TvrxY8vVcOlywpTNbxo324gK0/viewform" target="_blank">here!</a></p>
+                    </div>
                 </div>
                 <div class="carousel-caption">
                     <!-- Team Recruitment Application -->
                     <p class="lead"><a class="typeform-share btn btn-lg main-btn volunteer-btn"href="https://hackingedu.typeform.com/to/IqBqso" data-mode="2" target="_blank">Join The Team</a></p>
                 </div>
             </div>
-            <!-- Training Day -->
             <div class="item slides">
                 <div class="slide-2"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h1 class="training-day marg-t-4em">Training Day <span class="pp-r">4/25</span></h1>
-                    </hgroup>
-                </div>
-                <div class="carousel-caption">
-                    <p class="lead"><a class="typeform-share btn btn-lg main-btn apply-btn" href="https://hackingedu.typeform.com/to/Vub48x" data-mode="2" target="_blank">Training Day Application</a></p>
-                </div>
-            </div>
-            <!-- Sponsorships -->
-            <div class="item slides">
-                <div class="slide-3"></div>
                 <div class="hero">
                     <hgroup>
                         <h1>Sponsorships</h1>
@@ -159,7 +148,7 @@
                 touchdown = false;
                 isMoving = false;
             }, false);
-        
+
         } else {
             var pos = 0;
             var mousedown = false;
