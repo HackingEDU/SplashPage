@@ -41,7 +41,7 @@
     </div>
 
     <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" data-ride="carousel" data-interval="4000" class="carousel fade-carousel slide">
+    <header id="myCarousel" data-ride="carousel" data-interval="false" class="carousel fade-carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -58,24 +58,28 @@
                     <hgroup>
                         <!-- HackingEDU Cover Image -->
                         <img class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 mg-r-2em mg-t-3em" alt="HackingEDU hackathon" src="./assets/img/hacklogo-white-no-border.png" alt="">
-                        <h4 class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">Bay Area's Largest Education Hackathon</h4>
+                        <h4 class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">World's Largest Education Hackathon</h4>
                     </hgroup>
                 </div>
                 <div class="carousel-caption">
                     <!-- Team Recruitment Application -->
-                    <p class="lead"><a class="typeform-share btn btn-lg main-btn volunteer-btn"href="https://jackiezhang.typeform.com/to/IqBqso" data-mode="2" target="_blank">Join The Team</a></p>
+                    <p class="lead"><a class="typeform-share btn btn-lg main-btn volunteer-btn"href="https://hackingedu.typeform.com/to/IqBqso" data-mode="2" target="_blank">Join The Team</a></p>
                 </div>
             </div>
-            <!-- Training Day -->
+            <!-- Training Day Thanks -->
             <div class="item slides">
                 <div class="slide-2"></div>
                 <div class="hero">
                     <hgroup>
-                        <h1 class="training-day marg-t-4em">Training Day <span class="pp-r">4/25</span></h1>
+                        <h2>Thanks for coming to Training Day!!</h2>
                     </hgroup>
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/ktPx5vj6us8?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="carousel-caption">
-                    <p class="lead"><a class="typeform-share btn btn-lg main-btn apply-btn" href="https://jackiezhang.typeform.com/to/w6qOJT" data-mode="2" target="_blank">Training Day Application</a></p>
+                    <p class="lead">
+                        <a target="rss" class="btn btn-lg main-btn photos-btn-pad" href="#photos">Photos</a>
+                        <a target="rss" class="btn btn-lg main-btn workshops-btn-pad" href="#workshops">Workshops</a>
+                    </p>
                 </div>
             </div>
             <!-- Sponsorships -->
@@ -89,8 +93,8 @@
                 <div class="carousel-caption">
                     <!-- Sponsorship Application -->
                     <p class="lead">
-                        <a class="typeform-share btn btn-lg main-btn sponsor-btn sponsor-btn-pad"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor Us</a>
-                        <a href="https://drive.google.com/file/d/0BzI2Lz_qv89jY181ZUIwZXY4ZkE/view?usp=sharing" target = "rss" class="btn btn-lg main-btn sponsor-btn sponsor-btn-pad" id="trigger">The Packages</a>
+                        <a class="typeform-share btn btn-lg main-btn sponsor-btn sponsor-btn-pad"  href="https://hackingedu.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor Us</a>
+                        <a href="https://drive.google.com/file/d/0BzI2Lz_qv89jY181ZUIwZXY4ZkE/view?usp=sharing" target = "rss" class="btn btn-lg main-btn sponsor-btn packages-btn-pad" id="trigger">The Packages</a>
                     </p>
                 </div>
             </div>
@@ -110,6 +114,92 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Swipe to scroll setup -->
+    <!-- <script>
+    //Scrolling setup
+        var area = document.getElementById('myCarousel');
+        var carousel = $('.carousel');
+        var distance = 0;
+
+        if ('ontouchstart' in window) {
+            var touch = 0;
+            var lastTouch = 0;
+            var touchdown = false;
+            var isMoving = false;
+
+            area.addEventListener('touchstart', function(e) {
+                touchdown = true;
+                touch = e.touches[0].pageX;
+                //e.preventDefault();
+            }, false);
+
+            document.addEventListener('touchmove', function(e) {
+                if (!touchdown) {
+                    return;
+                }
+
+                isMoving = true;
+                touchdown = true;
+                lastTouch = e.touches[0].pageX;
+            }, false);
+
+            document.addEventListener('touchend', function(e) {
+                if (!touchdown || !isMoving) {
+                    return;
+                }
+
+                distance = lastTouch - touch;
+                if (Math.abs(distance) < 50) {
+                    return;
+                }
+
+                if (distance < 0) {
+                    carousel.carousel('next');
+                } else if (distance > 0) {
+                    carousel.carousel('prev');
+                }
+
+                touchdown = false;
+                isMoving = false;
+            }, false);
+
+        } else {
+            var pos = 0;
+            var mousedown = false;
+            area.addEventListener('mousedown', function(e) {
+                mousedown = true;
+                pos = e.pageX;
+            }, false);
+
+            document.addEventListener('mousemove', function(e) {
+                if (!mousedown) {
+                    return;
+                }
+
+                mousedown = true;
+            }, false);
+
+            document.addEventListener('mouseup', function(e) {
+                if (!mousedown) {
+                    return;
+                }
+
+                var distance = e.pageX - pos;
+                if (Math.abs(distance) < 100) {
+                    return;
+                }
+
+                if (distance < 0) {
+                    carousel.carousel('next');
+                } else if (distance > 0) {
+                    carousel.carousel('prev');
+                }
+
+                mousedown = false;
+            }, false);
+        }
+    </script> -->
 
     <script>
     // TypeForm

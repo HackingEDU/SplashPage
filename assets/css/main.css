@@ -135,11 +135,23 @@ li {
                            Main Page Signup Buttons
    =======================================================================*/
 .volunteer-btn {
-    padding: 15px 51px;
+    padding: 15px 50px;
+}
+
+.photos-btn-pad {
+    padding: 15px 67px;
+}
+
+.workshops-btn-pad {
+    padding: 15px 50px;
 }
 
 .sponsor-btn-pad {
-    padding: 15px 59px;
+    padding: 15px 60px;
+}
+
+.packages-btn-pad {
+    padding: 15px 50px;
 }
 
 .main-btn {
