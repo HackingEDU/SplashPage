@@ -388,11 +388,56 @@ Image credits: unsplash.com
 }
 
 /********************************/
+/*          Youtube Embed       */
+/********************************/
+
+.video-container {
+  position: absolute;
+	padding-bottom: 40%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  max-width: 80%;
+}
+.video-container iframe {
+	width: 1280px;
+	height: 720px;
+}
+
+/********************************/
 /*          Media Queries       */
 /********************************/
 @media screen and (min-width: 980px){
    .hero { width: 980px; }
 }
+@media screen and (max-width: 1920px){
+  .video-container iframe {
+    width: 853px;
+    height: 480px;
+  }
+}
+@media screen and (max-width: 1280px){
+  .video-container iframe {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .video-container iframe {
+    width: 512px;
+    height: 288px;
+  }
+}
 @media screen and (max-width: 640px){
    .hero h1 { font-size: 3em; }
+   .video-container iframe {
+     width: 384px;
+     height: 216px;
+   }
+}
+@media screen and (max-width: 480px){
+  .video-container iframe {
+    width: 288px;
+    height: 180px;
+  }
 }
