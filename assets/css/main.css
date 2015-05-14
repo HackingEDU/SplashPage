@@ -346,11 +346,10 @@ Image credits: unsplash.com
 /********************************/
 .overlay {
    position: absolute;
-   width: 100%;
-   height: 100%;
+   width: 100% !important;
+   top: 30px;
    z-index: 2;
-   background-color: #080d15;
-   opacity: .7;
+   background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 
 /********************************/
