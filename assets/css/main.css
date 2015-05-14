@@ -394,7 +394,7 @@ Image credits: unsplash.com
 .video-container {
   position: absolute;
 	padding-bottom: 40%; /* 16:9 */
-	padding-top: 25px;
+	padding-top: 10%;
 	height: 0;
   max-width: 80%;
 }
@@ -415,10 +415,16 @@ Image credits: unsplash.com
     height: 480px;
   }
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1680px){
   .video-container iframe {
     width: 640px;
     height: 360px;
+  }
+}
+@media screen and (max-width: 1280px){
+  .video-container iframe {
+    width: 560px;
+    height: 315px;
   }
 }
 
